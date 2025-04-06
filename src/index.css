@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("/src/assets/fonts/ProximaNova-Regular.otf") format("otf"),
+    url("/src/assets/fonts/ProximaNova-Regular.otf") format("otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  @apply font-sans;
+}
+/* In your global CSS or a module CSS file */
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.carousel-animate {
+  animation: slideIn 1s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+.fade-in-up-2 {
+  opacity: 0;
+  animation: fadeInUp 1s ease-out forwards;
+  animation-delay: 0.5s; /* Adjust this delay as needed */
+}
