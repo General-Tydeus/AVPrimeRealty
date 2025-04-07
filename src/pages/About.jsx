@@ -41,14 +41,12 @@ export default function About() {
               />
             </div>
             <h3 className="text-2xl font-semibold">Vinceheimer C. Abanilla</h3>
+            <p className="text-base">Licensed Real Estate Broker & Appraisor</p>
             <p className="text-base">
-              Licensed Real Estate Broker and Appraisor
+              PRC Registration No. <span className="">0034619</span>
             </p>
             <p className="text-base">
-              PRC Registration No. <span className="underline">0034619</span>
-            </p>
-            <p className="text-base">
-              DHSUD No. <span className="underline">001915</span>
+              DHSUD No. <span className="">001915</span>
             </p>
           </div>
         </div>
