@@ -42,10 +42,16 @@ export default function Footer() {
               </h2>
               <ul className="text-secondary dark:text-secondary font-medium">
                 <li className="mb-4">
-                  <a href="" className="hover:underline ">
+                  <a
+                    href="https://www.facebook.com/people/AV-Prime-Realty/61573816866853/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:underline"
+                  >
                     Facebook
                   </a>
                 </li>
+
                 <li>
                   <a href="" className="hover:underline">
                     Instagram

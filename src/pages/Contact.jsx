@@ -16,7 +16,10 @@ export default function Contact() {
 
           <div className="text-center md:text-left">
             <p className="text-lg mb-4">Or reach us directly:</p>
-            <p className="text-lg">📍 Address: Iloilo City</p>
+            <p className="text-lg">
+              📍 Address: Soriano Building, West Ave, Molo, Iloilo City,
+              Philippines
+            </p>
             <p className="text-lg">📞 Phone: (123) 456-7890</p>
             <p className="text-lg">✉️ Email: info@avprimerealty.com</p>
           </div>
