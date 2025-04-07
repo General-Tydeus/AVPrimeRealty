@@ -5,7 +5,7 @@ export default function About() {
   return (
     <div className="bg-clean min-h-screen py-16 px-4 text-primary">
       <div className="max-w-4xl mx-auto text-center fade-in-up">
-        <h1 className="text-4xl font-bold mb-4">About Us</h1>
+        <h1 className="text-4xl font-bold mt-5 mb-4">About Us</h1>
         <p className="text-lg mb-10 text-justify">
           Founded by Vinceheimer Abanilla, REB REA, AV Prime Realty is a
           full-service real estate company dedicated to providing comprehensive

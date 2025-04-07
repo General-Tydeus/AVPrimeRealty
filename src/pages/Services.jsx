@@ -78,7 +78,9 @@ export default function Services() {
 
   return (
     <div className="bg-clean min-h-screen py-16 px-4 text-primary fade-in-up">
-      <h2 className="text-3xl font-semibold text-center mb-8">Our Services</h2>
+      <h2 className="text-3xl font-semibold text-center mt-5 mb-8">
+        Our Services
+      </h2>
       <div className="max-w-7xl mx-auto flex justify-center items-center flex-wrap">
         {services.map((service) => (
           <a
