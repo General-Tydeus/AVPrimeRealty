@@ -1,5 +1,8 @@
 import React from "react";
-
+import img1 from "/public/assets/1.png";
+import Apartment from "/assets/apartment.jpg";
+import House from "/assets/house.jpg";
+import Condo from "/assets/condo.jpg";
 export default function Services() {
   const services = [
     {
@@ -22,7 +25,7 @@ export default function Services() {
           </ul>
         </div>
       ),
-      image: "../assets/apartment.jpg", // Add an appropriate image for this service
+      image: { Apartment }, // Add an appropriate image for this service
     },
 
     {
@@ -44,7 +47,7 @@ export default function Services() {
           </ul>
         </div>
       ),
-      image: "../assets/house.jpg", // Add an appropriate image for this service
+      image: { Apartment }, // Add an appropriate image for this service
     },
     {
       id: 3,
@@ -66,7 +69,7 @@ export default function Services() {
           </ul>
         </div>
       ),
-      image: "../assets/condo.jpg", // Add an appropriate image for this service
+      image: { Apartment }, // Add an appropriate image for this service
     },
   ];
 

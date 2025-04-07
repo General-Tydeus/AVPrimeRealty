@@ -1,5 +1,5 @@
 import React from "react";
-import team1 from "../assets/vince.jpg";
+import team1 from "/assets/vince.jpg";
 
 export default function About() {
   return (
