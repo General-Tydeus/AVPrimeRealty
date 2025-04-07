@@ -5,7 +5,11 @@ export default function Carousel() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   // List of images to be used in the carousel
-  const images = ["/assets/1.png", "/assets/2.png", "/assets/3.png"];
+  const images = [
+    `${import.meta.env.BASE_URL}assets/1.png`,
+    `${import.meta.env.BASE_URL}assets/2.png`,
+    `${import.meta.env.BASE_URL}assets/3.png`,
+  ];
 
   // Handle the next slide
   const nextSlide = () => {

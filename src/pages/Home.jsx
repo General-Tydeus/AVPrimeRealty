@@ -2,9 +2,9 @@ import React, { useEffect, useState } from "react";
 import Carousel from "../components/Carousel";
 import PropertyCard from "../components/PropertyCard";
 import Jumbotron from "../components/Jumbotron";
-import Apartment from "../assets/apartment.jpg";
-import House from "../assets/house.jpg";
-import Condo from "../assets/condo.jpg";
+import Apartment from "/assets/apartment.jpg";
+import House from "/assets/house.jpg";
+import Condo from "/assets/condo.jpg";
 
 export default function Home() {
   const [scrollY, setScrollY] = useState(0);
