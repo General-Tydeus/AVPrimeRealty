@@ -6,7 +6,7 @@ export default function Contact() {
       <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
         {/* Left Section - Contact Information */}
         <div className="space-y-6">
-          <h1 className="text-4xl font-bold mt-5 mb-4 text-center md:text-left">
+          <h1 className="text-4xl font-bold mt-20 mb-4 text-center md:text-left">
             Contact Us
           </h1>
           <p className="text-lg text-center md:text-left mb-10">
