@@ -20,6 +20,17 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const handleLinkClick = () => {
+    if (window.innerWidth <= 768) {
+      // Check for mobile screen width
+      setIsOpen(false); // Close the navbar when a link is clicked on mobile
+    }
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", // This makes the scroll smooth
+    });
+  };
+
   return (
     <nav
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
@@ -58,10 +69,11 @@ export default function Navbar() {
           className={`${isOpen ? "block" : "hidden"} w-full md:block md:w-auto`}
           id="navbar-default"
         >
-          <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-white/10 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-transparent">
+          <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-clean md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-transparent">
             <li>
               <NavLink
                 to="/"
+                onClick={handleLinkClick}
                 className={({ isActive }) =>
                   `block py-2 px-3 rounded-sm md:p-0 hover:text-gray-600 transition ${
                     isActive ? "font-bold" : ""
@@ -74,6 +86,7 @@ export default function Navbar() {
             <li>
               <NavLink
                 to="/services"
+                onClick={handleLinkClick}
                 className={({ isActive }) =>
                   `block py-2 px-3 rounded-sm md:p-0 hover:text-gray-600 transition ${
                     isActive ? "font-bold" : ""
@@ -86,6 +99,7 @@ export default function Navbar() {
             <li>
               <NavLink
                 to="/about"
+                onClick={handleLinkClick}
                 className={({ isActive }) =>
                   `block py-2 px-3 rounded-sm md:p-0 hover:text-gray-600 transition ${
                     isActive ? "font-bold" : ""
@@ -98,6 +112,7 @@ export default function Navbar() {
             <li>
               <NavLink
                 to="/contact"
+                onClick={handleLinkClick}
                 className={({ isActive }) =>
                   `block py-2 px-3 rounded-sm md:p-0 hover:text-gray-600 transition ${
                     isActive ? "font-bold" : ""
