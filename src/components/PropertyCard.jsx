@@ -2,9 +2,9 @@ import React from "react";
 
 export default function PropertyCard({ img, name, description }) {
   return (
-    <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+    <div className="max-w-sm mx-4 sm:mx-2 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
       <a href="/services">
-        <img className="rounded-t-lg" src={img} alt="" />
+        <img className="rounded-t-lg w-full" src={img} alt="" />
       </a>
       <div className="p-5">
         <a href="/services">
