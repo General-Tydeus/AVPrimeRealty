@@ -28,13 +28,9 @@ export default function Carousel() {
   }, []);
 
   return (
-    <div
-      id="default-carousel"
-      className="relative w-full"
-      data-carousel="slide"
-    >
-      <div className="relative h-[250px] md:h-[500px] overflow-hidden">
-        {/* Render images dynamically */}
+    <div className="relative w-full">
+      <div className="relative h-[50vh] md:h-[500px] lg:h-[500px] overflow-hidden">
+        {/* Carousel images */}
         {images.map((image, index) => (
           <div
             key={index}
@@ -45,7 +41,7 @@ export default function Carousel() {
           >
             <img
               src={image}
-              className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              className="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
               alt={`Slide ${index + 1}`}
             />
           </div>
