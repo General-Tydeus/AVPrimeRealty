@@ -1,9 +1,12 @@
 import React from "react";
 import img1 from "/public/assets/1.png";
-import Apartment from "/assets/apartment.jpg";
-import House from "/assets/house.jpg";
-import Condo from "/assets/condo.jpg";
+
 export default function Services() {
+  const images = [
+    `${import.meta.env.BASE_URL}assets/apartment.jpg`,
+    `${import.meta.env.BASE_URL}assets/house.jpg`,
+    `${import.meta.env.BASE_URL}assets/condo.jpg`,
+  ];
   const services = [
     {
       id: 1,
@@ -25,7 +28,7 @@ export default function Services() {
           </ul>
         </div>
       ),
-      image: { Apartment }, // Add an appropriate image for this service
+      image: images[0], // Add an appropriate image for this service
     },
 
     {
@@ -47,7 +50,7 @@ export default function Services() {
           </ul>
         </div>
       ),
-      image: { Apartment }, // Add an appropriate image for this service
+      image: images[1], // Add an appropriate image for this service
     },
     {
       id: 3,
@@ -69,7 +72,7 @@ export default function Services() {
           </ul>
         </div>
       ),
-      image: { Apartment }, // Add an appropriate image for this service
+      image: images[2], // Add an appropriate image for this service
     },
   ];
 
